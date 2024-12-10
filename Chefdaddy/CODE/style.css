@@ -1,0 +1,111 @@
+@import url();
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lexend',sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.heading {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.heading h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.heading h4::after {
+    position: absolute;
+    content: " ";
+    width: 80px;
+    height: 3px;
+    background-color: teal;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading {}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-menu {
+    text-align: center;
+    flex-basis: 32%;
+}
+
+.single-menu h2 {
+    background-color: tomato;
+    color: #fff;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.menu-box {
+    border: 1px solid #ddd;
+    margin: 35px 0;
+    padding: 20px 0;
+    border-bottom: 3px solid #ddd;
+}
+
+.menu-box img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    transition: .3s;
+}
+
+.menu-box h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 10px 0;
+    padding: 10px;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.menu-box h4 span {
+    color: tomato;
+    font-style: italic;
+}
+
+.menu-box :hover img {
+    border-radius: 0;
+}
+
+.menu-box:hover img {
+    border-radius: 0;
+}
+
+@media only screen and (max-width:800px){
+    .container{
+        width: 400px;
+    }
+    .single-menu{
+        flex-basis: 100%;
+    }
+}
